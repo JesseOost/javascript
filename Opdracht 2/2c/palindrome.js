@@ -11,9 +11,7 @@ class Palindrome{
     checkPalindrome(){
 
         var inputLower = this.input.toLowerCase().replace(" ", "");
-        console.log("Input Lower: " + inputLower);
         var reverseInput = inputLower.split("").reverse().join("");
-        console.log("Reverse Input: " + reverseInput);
         
         if(inputLower === reverseInput){
             return this.input + " is a palindrome";
