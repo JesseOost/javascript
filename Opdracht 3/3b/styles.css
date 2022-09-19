@@ -24,7 +24,7 @@ img {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    background-color: rgba(0,0,0,0.8);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -38,5 +38,5 @@ img {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    color: white;
 }

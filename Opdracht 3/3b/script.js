@@ -22,7 +22,7 @@ function showSlides(index){
     }
 
     for(i = 0; i < slides.length; i++){
-        slides[index].style.display = "none";
+        slides[i].style.display = "none";
     }
 
     slides[slideIndex-1].style.display = "block";
