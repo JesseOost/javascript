@@ -2,9 +2,9 @@ element = document.getElementById("money");
 
 var moneyRemaining = 50;
 
-updateRemainingMoney(moneyRemaining);
+updateRemainingMoneyDisplay(moneyRemaining);
 
-function updateRemainingMoney(newMoney){
+function updateRemainingMoneyDisplay(newMoney){
 
     console.log(newMoney);
 
@@ -20,18 +20,7 @@ function updateRemainingMoney(newMoney){
     }
 }
 
-
-function minusTwentyFive(){
-    moneyRemaining = moneyRemaining - 25;
-    updateRemainingMoney(moneyRemaining);
-}
-
-function minusTen(){
-    moneyRemaining = moneyRemaining - 10;
-    updateRemainingMoney(moneyRemaining);
-}
-
-function minusFive(){
-    moneyRemaining = moneyRemaining - 5;
-    updateRemainingMoney(moneyRemaining);
+function updateRemainingMoney(amount){
+    moneyRemaining = moneyRemaining - amount;
+    updateRemainingMoneyDisplay(moneyRemaining);
 }
