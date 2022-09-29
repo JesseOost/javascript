@@ -4,19 +4,21 @@ var moneyRemaining = 50;
 
 updateRemainingMoneyDisplay(moneyRemaining);
 
+function updateDisplay(text){
+    element.innerHTML = text;
+}
+
 function updateRemainingMoneyDisplay(newMoney){
 
-    console.log(newMoney);
-
-    var newMoneyString = newMoney + " Cent";
-    element.innerHTML = newMoneyString;
-
-    if(newMoney === 0){
-        alert("You have given enough money!")
+    if(newMoney > 0){
+        var newMoneyString = newMoney + " Cent";
+        updateDisplay(newMoneyString);
     }
 
-    if(newMoney < 0) {
-        alert("You have returned too much money");
+    if(newMoney <= 0){
+        returnMoney = newMoney * -1;
+        var newMoneyString = "You have given enough money! Your change is: " + returnMoney + " cents";
+        updateDisplay(newMoneyString);
     }
 }
 
