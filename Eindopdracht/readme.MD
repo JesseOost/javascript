@@ -1,0 +1,1 @@
+To start the game use `parcel index.html`
